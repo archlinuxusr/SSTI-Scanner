@@ -8,7 +8,7 @@ class WaybackMachine:
     def fetch_urls(self):
         response = requests.get(
             f"https://web.archive.org/cdx/search/cdx?url=*.{self.domain}/*&output=json&collapse=urlkey",
-            timeout=30,
+            timeout=60,
         )
         if response.status_code == 200:
             return [entry[2] for entry in response.json()[1:]]
