@@ -1,0 +1,6 @@
+[project]
+name = "RareVuln-Scanner"
+version = "0.1.0"
+description = "Entwicklung eines automatisierten SSTI-Scanners zur Identifizierung von Sicherheitsanfälligkeiten in Webanwendungen"
+requires-python = ">=3.13"
+dependencies = [ "requests" ]
